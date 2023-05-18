@@ -1,0 +1,463 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+html{
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+.home{
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)), url(../img/estructura-abstracta-3d-gris-oscuro_2560x1440_xtrafondos.com.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+
+nav{
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
+}
+nav img{
+    width: 150px;
+}
+
+.nav-partes{
+    flex: 1;
+    text-align: right;
+}
+
+.nav-partes ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+.nav-partes ul li a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 13px;
+}
+
+.nav-partes ul li::after{
+    content:'';
+    width: 0%;
+    height: 2px;
+    background: #7e9c8a;
+    display: block;
+    margin: auto;
+    transition:0.5s ;
+}
+
+.nav-partes ul li:hover::after{
+    width: 100%;
+
+}
+
+.nombre{
+    width: 90%;
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+
+.nombre h1{
+    font-size: 62px;
+}
+
+.nombre p{
+    margin: 10px 0 40px;
+    font-size: 14px;
+    color: #777;
+
+}
+
+.boton-home{
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    border:1px solid #fff;
+    padding: 12px 34px;
+    font-size: 13px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+}
+.boton-home{
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    border:1px solid #fff;
+    padding: 12px 34px;
+    font-size: 13px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+}
+
+.boton-home:hover{
+    border:1px solid hsl(204, 100%, 65%);
+    background: hsl(204, 100%, 65%);
+    transition: 1s;
+}
+
+.servicios{
+    width: 85%;
+    margin: auto;
+    height: auto;
+    text-align: center;
+    padding-top: 50px;
+    background-color: rgba(179, 177, 177, 0.288);
+    border-radius: 50px;
+    box-shadow: 5px 5px 15px gray;
+    
+
+}
+
+h1{
+    font-size: 36px;
+    font-weight: 600;
+}
+
+p{
+    color: #777;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 22px;
+    padding: 10px;
+}
+
+.row{
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+}
+.row1{
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+}
+.servicios-col{
+    flex-basis: 31%;
+    background: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)), url(../img/estructura-abstracta-3d-gris-oscuro_2560x1440_xtrafondos.com.jpg);
+    border-radius: 10px;
+    margin-bottom: 5%;
+    padding: 20px 12px;
+    box-sizing: border-box;
+    transition: 0.5s;
+}
+.servicios-col p{
+    color: rgb(141, 139, 139);
+}
+
+h3{
+    text-align: center;
+    font-weight: 600;
+    margin: 10px 0;
+    color: #fff;
+}
+
+
+.servicios-col:hover{
+    box-shadow:0 0 80px 0px rgba(15, 121, 59, 0.2) ;
+}
+
+.nosotros{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top:30px ;
+    border-top: 2cm;
+}
+.fondosSer{
+    background-color: rgb(71, 71, 71);
+    width: 100%;
+}
+
+.nosotros-col{
+    flex-basis: 32%;
+    border-radius: 10px;
+    margin-bottom:30px ;
+    position: relative;
+    overflow: hidden;
+}
+.nosotros-col img{
+    width: 100%;
+    display: block;
+}
+.tituloo{
+    background:transparent;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: 0.5s;
+}
+.tituloo:hover{
+    opacity: .5;
+    background:rgba(0,0 ,0);
+}
+
+
+.tituloo h3{
+    width: 100%;
+    font-weight:500 ;
+    color:transparent;
+    font-size: 50px;
+    bottom:0 ;
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+    transition: 0.5s;
+}
+
+
+.tituloo:hover h3{
+    bottom: 49%;
+    opacity: 1;
+    color:hsl(204, 100%, 65%);
+
+}
+
+.nosotrosdos{
+    min-height: 80vh;
+    width: 100%;
+    height: 1cm;
+    margin-top: 2cm;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    background-color: rgba(179, 177, 177, 0.288);
+    box-shadow: 5px 5px 15px gray ;
+}
+
+.nosotrosdos-col{
+    flex-basis: 31%;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    position: relative;
+    text-align: left;
+    overflow: hidden;
+
+}
+
+.nosotrosdos-col img{
+    width: 95%;
+    height: 70%;
+    border-radius: 10px;
+    margin-right: 1cm ;
+    margin-left: 0.2cm;
+    margin-right: 0.2cm;
+    box-shadow: 5px 5px 15px gray  ;
+    
+    
+}
+
+.nosotrosdos-col p{
+    padding: 0;
+    margin-right: 1cm;
+
+}
+
+.nosotrosdos-col h3{
+    margin-top: 5px;
+    margin-bottom: 5px;
+    text-align: left;
+    margin-left: 0.3cm;
+    
+}
+.row p{
+    margin-left: 0.3cm;
+}
+
+
+.contacto{
+    margin: 100px auto;
+    width: 80%;
+    background-image:linear-gradient(rgba(0,0,0,0.7), rgba(100, 100, 100, 0.7)), url(../img/2895133.jpg) ;
+    background-position: center;
+    background-size: cover;
+    border-radius:10px ;
+    text-align: center;
+    padding: 100px 0;
+    margin-bottom: 150px;
+    margin-top: 90px;
+    box-shadow: 5px 5px 15px gray ;
+}
+
+.contacto h1{
+    color: #fff;
+    margin-bottom: 60px;
+    padding: 0;
+}
+
+.footer{
+    
+    height: 70%;
+    text-align: center;
+    padding-top: -5px;
+    background: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)), url(../img/estructura-abstracta-3d-gris-oscuro_2560x1440_xtrafondos.com.jpg);
+    box-shadow: 5px 5px 15px gray ;
+    
+}
+
+.footer h4{
+    margin-bottom: 15px;
+    margin-top: 30px;
+    font-weight: 600;
+    color: #fff;
+    
+
+}
+
+.icons{
+    margin: 0 13px;
+    cursor: pointer;
+    padding: 18px 0;
+    font-size: 28px;
+}
+.script{
+    text-align: left;
+    font-size: 12px;
+}
+.script2{
+    text-align: left;
+    font-size: 35px;
+    margin-top: -1cm;
+}
+.quienes{
+ text-align: center;
+}
+.fondosSer{
+    background-color: rgba(241, 238, 238, 0.726);
+    height: 70%;
+    width: 100%;
+}
+.row1 h3{
+    color: black;
+    text-align: center;
+    margin-left: -1cm;
+}
+.row1 p{
+    text-align: center;
+}
+:root {
+    --dot-radius:  30px;
+    --path-radius: 150px;
+    --vp-width:    700px;
+    --vp-height:   700px;
+  
+    --static-dot-color: hsl(204, 100%, 65%);
+    --moving-dot-color: hsl(178, 94%, 65%);
+  }
+  
+  
+  /* --------------------------------------------------
+     Elements
+     -------------------------------------------------- */
+  
+ 
+ 
+  .efecto{
+    background-color: transparent;
+    height: 60vh;
+    width: 50vw;
+    margin-left: 25cm;
+    margin-top: -4cm;
+  }
+  
+  body {
+    backdrop-filter: none;
+
+  }
+  .nombre h1{
+    font-size: 90px;
+  }
+  .scriptHome{
+    font-size: 16px;
+  }
+  
+  
+  
+  /* --------------------------------------------------
+     Classes
+     -------------------------------------------------- */
+  
+  .dot {
+    fill: var(--static-dot-color);
+  }
+  
+  .dot--light {
+    fill: var(--moving-dot-color);
+    filter: url('#glow');
+  }
+  
+  .dot--glowing {
+    fill: var(--moving-dot-color);
+    filter: url('#outer-glow');
+  }
+  
+  .scanner {
+    will-change: transform;
+    animation: 3s scan 0s infinite linear both;
+  }
+  
+  .circles {
+    filter: url("#goo");
+  }
+  
+  .centered {
+    /* FF lets us use percentages, but Chrome doesn't like that. That
+     * means we have to hard-code the dimensions of the viewport.
+     */
+    transform:
+      translate(
+        calc((var(--vp-width) * 0.5) - var(--dot-radius)),
+        calc((var(--vp-height) * 0.5) - var(--dot-radius))
+      );
+  }
+  
+  .credits {
+    margin-bottom: calc(1.5rem * 2);
+  }
+  
+  
+  /* --------------------------------------------------
+     Animations
+     -------------------------------------------------- */
+  
+   /* Defines the circular path our dots will take. We use 2 `rotate`
+    * functions to contrain the plane containing our dots. Without
+    * this, the dots will go out of orbit. See this brilliant post for
+    * a much better explanation: 
+    * http://www.useragentman.com/blog/2013/03/03/animating-circular-paths-using-css3-transitions/
+    */
+  @keyframes scan {
+    from {
+      transform: rotate(0deg) translateY(calc(var(--path-radius) * -1)) rotate(0deg);
+    }
+  
+    to {
+      transform: rotate(360deg) translateY(calc(var(--path-radius) * -1)) rotate(-360deg);
+    }
+  }
+  
+  .icons{
+    color:#fff;
+  }
+
+  .cerrar{
+    color: black;
+    cursor: pointer;
+  }

@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="styles.css">
+    <title>pagos-Lsc information</title>
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="row flex-nowrap">
+            <div class="col-auto col-md-3 col-xl-2 px-sm-2 px-0 bg-dark">
+                <div class="d-flex flex-column align-items-center align-items-sm-start px-3 pt-2 text-white min-vh-100">
+                  <img src="logo.jpg"  id="img"  >
+              
+                    <a  class="d-flex align-items-center pb-3 mb-md-0 me-md-auto text-white text-decoration-none">
+                      <center>  <span class="fs-5 d-none d-sm-inline">Menu</span></center>
+                    </a>
+                
+                    <ul class="nav nav-pills flex-column mb-sm-auto mb-0 align-items-center align-items-sm-start" id="menu">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link align-middle px-0">
+                              <i class="fa fa-home" aria-hidden="true"></i> <span class="ms-1 d-none d-sm-inline">Home</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#submenu1" data-bs-toggle="collapse" class="nav-link px-0 align-middle">
+                              <i class="fa fa-user" aria-hidden="true"></i> <span class="ms-1 d-none d-sm-inline">Usuarios</span> </a>
+                            <ul class="collapse show nav flex-column ms-1" id="submenu1" data-bs-parent="#menu">
+                                <li class="w-100">
+                                    <a href="../ModificarUsuarios/ActualizarUsuarios/index.html" class="nav-link px-0"> <span class="d-none d-sm-inline"id="uno">Consultar Usuario</span>  </a>
+                                </li>
+                                <li>
+                                    <a href="../RegistroUsuarios/registro.html" class="nav-link px-0"> <span class="d-none d-sm-inline"id="uno">Crear Usuario</span> </a>
+                                </li>
+                               
+                            </ul>
+                        </li>
+                  
+                        <li>
+                            <a href="#submenu2" data-bs-toggle="collapse" class="nav-link px-0 align-middle ">
+                              <i class="fa fa-money" aria-hidden="true"></i><span class="ms-1 d-none d-sm-inline">Pagos</span></a>
+                            <ul class="collapse nav flex-column ms-1" id="submenu2" data-bs-parent="#menu">
+                                <li class="w-100">
+                                    <a href="../pagos/index.html" class="nav-link px-0"> <span class="d-none d-sm-inline"id="uno">Crear Pago</span></a>
+                                </li>
+                                <li>
+                                    <a href="" class="nav-link px-0"> <span class="d-none d-sm-inline"id="uno">Consultar Pago</span></a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#submenu3" data-bs-toggle="collapse" class="nav-link px-0 align-middle">
+                                <i class="fa fa-credit-card-alt" aria-hidden="true"></i> <span class="ms-1 d-none d-sm-inline">Depositos</span> </a>
+                                  <ul class="collapse nav flex-column ms-1" id="submenu3" data-bs-parent="#menu">
+                                  <li class="w-100">
+                                      <a href="../deposito/deposito.html" class="nav-link px-0"> <span class="d-none d-sm-inline" id="uno">Crear Deposito</span> </a>
+                                  </li>
+                                  <li>
+                                      <a href="../consultar_deposito/con_deposito.html" class="nav-link px-0"> <span class="d-none d-sm-inline" id="uno">Consultar Deposito
+                                      </span> </a>
+                                </li>
+                              
+                                
+                            </ul>
+                        </li>
+                        <li>
+                          <a href="#submenu3" data-bs-toggle="collapse" class="nav-link px-0 align-middle">
+                            <i class="fa fa-credit-card" aria-hidden="true"></i> <span class="ms-1 d-none d-sm-inline">Retiros</span> </a>
+                              <ul class="collapse nav flex-column ms-1" id="submenu3" data-bs-parent="#menu">
+                              <li class="w-100">
+                                  <a href="#" class="nav-link px-0"> <span class="d-none d-sm-inline" id="uno">Cosultar Retiro</span> </a>
+                              </li>
+                              <li>
+                                  <a href="#" class="nav-link px-0"> <span class="d-none d-sm-inline" id="uno">Realizar Retiro
+                                  </span> </a>
+                              </li>
+                            
+                              
+                          </ul>
+                      </li>
+                       
+                    
+                </div>
+            </div>
+            <div class="col py-3">
+                <div class="content"></div>
+            </div>
+                <div class="pagos">
+                    <div class="realizarpago">
+                    </div>
+                    <form class="formulario">
+                        <img class="avatar"src="img/logo.jpg" alt="logo LSC INFORMATION">
+                        <h2 class="crearpago">Pagos</h2>
+                        <p class="Rpago">Realizar un pago</p>
+                        <br>
+                        <label for="numref">Numero de Referencia</label>
+                        <input class="espacio" type="text" placeholder="...">
+                        <br>
+                        <label for="numref">Producto</label>
+                        <input type="email" placeholder="...">
+                        <br>
+                        <label for="numref">Descripcion del Producto</label>
+                        <input type="descripcion" placeholder="...">
+                        <br>
+                        <label for="numref">Valor a pagar</label>
+                        <input type="valor" placeholder="...">
+                        <br>
+                        <input class="btn btn-efecto" type="button" value="Realizar Pago">
+                   
+                </div>
+            </div>
+        </div>
+    </div>
+              </div>
+              <div class="offcanvas-body">
+             
+              </div>
+            </div>
+                        
+                              
+                            
+                         
+                          
+                           
+                        
+                     
+                            
+        
+            
+         
+     
+    
+</body>
+
+</html>

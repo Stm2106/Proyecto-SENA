@@ -1,0 +1,40 @@
+
+#contenedor img {
+    width: 50px;
+    height: 30px;
+    border-radius: 200%;
+    margin-right: 120px;
+
+}
+#img {
+    
+    width: 100px;
+    height: 100px;
+    border-radius: 150%;
+  
+    top: -50px;
+    left: calc(50% -50px);
+    margin-bottom: 20px;
+    margin-top: 20px;
+    margin-left: 80px;
+}
+#botonini{
+ 
+    
+    margin-right: 15px;
+
+
+}
+#regsistrar{
+
+    margin-right: 15px;
+}
+body {
+    background: url(estructura-abstracta-3d-gris-oscuro_2560x1440_xtrafondos.com.jpg);
+}
+span,i{
+    color: #fff;
+}
+#uno{
+    color: rgb(95, 91, 91);
+}

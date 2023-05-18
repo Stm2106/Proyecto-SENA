@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"&amp;gt;>
+<title>LSC INFORMATION</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css">
+<link rel="stylesheet" href="css/pruebaa.css">
+</head>
+<body><section class="fondogeneral">
+    
+    <section class="home" id="home">
+        <nav>
+            <a href="index.html"> <img src="" alt=""></a> 
+            <div class="nav-partes">
+                <ul>
+                    <li> <a href="#home">HOME</a></li>
+                    <li> <a href="#servicioss">SERVICIOS</a></li>
+                    <li> <a href="#quienessomos">¿QUIENES SOMOS?</a></li>
+                    <li> <a href="#contacto">CONTACTO</a></li>
+                    <li> <a href="../RegistroOutside/Registro.php" class="boton-home">REGISTRARSE</a></li>
+                </ul>
+
+            </div>
+        </nav>
+        <div class="nombre">
+            <div class="script"> <h1>
+                LSC INFORMATION
+            </h1>
+
+          <p>
+              
+                <div class="script2">Simple.<br>
+                    Flexible.<br>
+                    Fiable.<br><br></div>
+               <div class="scriptHome"> Realice sus transacciones, depositos y retiros de servicios en Family World-Flex en pocos minutos, <br>desde cualquier
+                punto autorizado y nuestros asesores te brindaran la mejor atencion para que <br>sientas la mayor confianza
+                de nuestro servicios.</div>     
+               
+                            </p>
+            <a href="../Usuarios/login.html" class="boton-home">Iniciar Sesion</a>
+            
+        </div>
+    </div>
+    <div class="efecto">
+        <svg viewBox="0 0 700 700">
+            <defs>
+              <g id="circles">
+                <symbol id="dot">
+                  <circle cx="30" cy="30" r="30" />
+                </symbol>
+        
+                <!--
+                  We need two moving circles in order to pull off this effect:
+                  one for the gooey effect and another for the glow. By
+                  animating this circle and using it in the two aforementioned
+                  scenarios, we guarantee that the two dots we end up using
+                  will remain moving in sync. This would not be the case if
+                  we assigned our animation to the two dots separately. Note
+                  the coordinates that we assign to the circle.
+                -->
+                <symbol id="moving-dot">
+                  <circle class="scanner" cx="175" cy="175" r="28" />
+                </symbol>
+              </g>
+        
+              <g id="filters">
+                <!-- Our gooey effect filter. -->
+                <filter id="goo">
+                  <feGaussianBlur in="SourceGraphic" stdDeviation="10" result="blur" />
+                  <feColorMatrix in="blur"
+                                 mode="matrix"
+                                 values="1 0 0 0 0
+                                         0 1 0 0 0
+                                         0 0 1 0 0
+                                         0 0 0 19 -9"
+                                 result="goo" />
+                  <feComposite in="SourceGraphic" in2="goo" operator="atop" />
+                </filter>
+        
+                <!--
+                  This softens the edges of the moving dot by adding a
+                  subtle glowing effect. We increase the height and the
+                  width, and adjust the coordinates to avoid clipping.
+                  These values are arbitrary, as I didn't want to get
+                  super math-y about it.
+                -->
+                <filter id="glow" filterUnits="userSpaceOnUse" x="-20%" y="-20%" height="140%" width="140%">
+                  <feGaussianBlur in="SourceGraphic" stdDeviation="12" />
+                </filter>
+        
+                <!--
+                  A larger, yet more subtle glow effect meant for the
+                  second moving circle. Again, the dimension and position
+                  attributes are arbitrary but large enough to prevent
+                  any clipping.
+                -->
+                <filter id="outer-glow" filterUnits="userSpaceOnUse" x="-50%" y="-50%" height="220%" width="220%">
+                  <feGaussianBlur in="SourceGraphic" stdDeviation="30" result="outer-glow"/>
+                </filter>
+              </g>
+            </defs>
+        
+            
+              <desc id="desc">
+            
+              </desc>
+        
+              <!--
+                For the effect to work, the "#goo" filter should be applied
+                to a container, which this <g> is. The moving dot uses the
+                "#glow" filter to replace the hard edges of the dot with a
+                soft glow effect.
+        
+                We derive the location of the eight circles by converting
+                polar to Cartesian coordinates using the following
+                equations:
+        
+                x = r cos ϕ
+                y = r sin ϕ
+        
+                Here, `r` stands for the radius of the circle defining
+                the circular path. This is 150 in our case. `ϕ` is
+                multiples of 45° (360 divided by 8).
+              -->
+              <g class="circles centered">
+                <use class="dot" href="#dot" x="106"  y="106"/>
+                <use class="dot" href="#dot" x="0"    y="150"/>
+                <use class="dot" href="#dot" x="-106" y="106"/>
+                <use class="dot" href="#dot" x="-150" y="0"/>
+                <use class="dot" href="#dot" x="-106" y="-106"/>
+                <use class="dot" href="#dot" x="0"    y="-150"/>
+                <use class="dot" href="#dot" x="106"  y="-106"/>
+                <use class="dot" href="#dot" x="150"  y="0"/>
+                <!-- Position the glowing dot by the topmost center dot. -->
+                <use class="dot--light" href="#moving-dot" x="-150" y="-150" />
+              </g>
+        
+              <!--
+                This extra dot represents the larger and softer glow around
+                the moving dot. We can't include this in the group above
+                because the "#goo" filter renders the "#outer-glow" filter
+                useless. It causes clipping, in addition, due to it missing
+                the filter attributes from "#outer-glow".
+        
+                Note that we need to wrap the dot in a <g> due to having
+                to apply a translation twice: one for centering the dot and
+                another for the animation. If we were to apply the
+                `centered` class to the dot, the value of the translation
+                from the animation would override it, messing up the
+                effect. Alternatively, we could define another `@keyframes`
+                rule but with the appropriate `translateY` value.
+              -->
+              <g class="centered">
+                <use class="dot--glowing" href="#moving-dot" x="-150" y="-150" />
+              </g>
+            </svg>
+          </svg>
+            
+
+          </p>
+    </div>
+
+    </section>
+  
+    
+<section class="fondosSer">
+    <section class="servicios" id="servicioss" >
+        <h1>SERVICIOS </h1>
+        <p>Dentro de los puntos Family world-Flex te brindamos los mejores servicios los cuales podras realizarlos dentro de nuestro horario de atencion
+             <br>Lunes-viernes 8am a 6pm y Sabados 8am a 2pm, Estamos ubicados en la direccion:Cll 67 # 122 a 65 y tenemos a disposcion nuestros asesores quienes te
+             <br> ayudaran a completar tus servicios transaccionales, puedes acercarte a nuestros puntos a recibir informacion de tus depositos y/o retiros
+             <br> asi mismo recibiras un comprobante al finalizar tus transacciones, via Email, SMS o fisico para mayor comodidad.
+             <br>¡Te esperamos!
+   
+
+        </p>
+       
+        
+        <div class="row">
+            <div class="servicios-col"> 
+                <h3>PAGOS</h3>
+                <p>LSC INFORMATION le permitira a Family World-flex llevar un registro de los pagos
+                gestionado por la <br>empresa durante todo el mes, esto con el fin de generar un seguimiento<br>
+                organizados a las salidas de las compañia.
+                    
+                </p>
+            </div>
+            <div class="servicios-col"> 
+                <h3>DEPOSITOS </h3>
+                <p>Puedes depositar dinero en cualquiera de nuestros puntos autorizados, <br>
+                   en pocos minutos, con algunos de tus datos personales gestionamos el envio
+                   de la cantidad de<br> dinero que desees y finalizar generamos un comprobante del<br>
+                   deposito realizado.
+                
+                </p>
+            </div>
+            <div class="servicios-col"> 
+                <h3>RETIROS</h3>
+                <p>Una vez te hayan realizado un deposito, acercate a un punto Family World-flex 
+                   y solicita a <br> nuestros asesores un retiro, recuerda tu codigo de retiro para así <br>
+                   gestionar de manera segura el reembolso de tu dinero 
+                    
+                </p>
+            </div>
+
+        </div>
+
+    </section>
+</section>
+
+    <section class="nosotros" id="quienessomos">
+        <h1>¿QUIÉNES SOMOS?</h1>
+        <div class="quienes"><p>Somos una empresa encargada de propocionar servicios transaccionales a todos nuestros clientes de manera agil y segura,<br>
+            Family World-Flex constituida en el año 2018 por nosotros Jeimy Kathryne Patarroyo y Victor Alfonso Martiez, lleva 4 años, brindando servicios y atencion al cliente
+            de calidad,<br> lo cual nos ha permitido ser reconocidos por los habitantes del barrio Engativa (santa ibrada) y que ellos confie en nuestros servicios.
+            Contamos <br>con una serie de sistemas los cuales nos ayudará a realizar tus transcciones de manera confiable, visualizamos ser lideres<br>
+            dentro de las pequeñas empresas para ser un modelo a seguir en cuanto a evolucion tecnologica innovadora y de calidad </p></div>
+
+        <div class="row">
+            <div class="nosotros-col">
+                <img src="img/3112677.png">
+                <div class="tituloo">
+                    <h3>L <br> LIDERAZGO</h3>
+                    
+                </div>
+            </div>
+            <div class="nosotros-col">
+                <img src="img/3992745.png">
+                <div class="tituloo">
+                    <h3>S <br> SERVICIO </h3>
+                </div>
+            </div>
+            <div class="nosotros-col">
+                <img src="img/3918929.png">
+                <div class="tituloo">
+                    <h3>C <br> CALIDAD</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<section class="nosotrosdos">
+   <div class="DescripcionLSC"><br><center><h1>LSC INFORMATION </h1>
+    <p>En el año 2021 un grupo de jovenes interesados por el desarrollo de software se unieron para fundar LSC INFORMATION<br>
+       con el fin de permitirle a las pequeñas empresas dar un paso en los avance tecnologico de la actualidad.
+    </p>
+</center> </div> 
+    <div class="row1">
+        <div class="nosotrosdos-col">
+            <img src="img/WhatsApp Image 2022-08-30 at 8.57.14 PM.jpeg" alt="">
+            <h3> FUNDADORES</h3>
+            <p><Em></Em>
+            </p>
+        </div>
+        <div class="nosotrosdos-col">
+            <img src="img/89f9229f-3bcb-45da-829b-735197781896.jpg" alt="">
+            <h3> CO-FUNDADOR</h3>
+            <p >Carlos Daniel Galeano
+            </p>
+        </div>
+        <div class="nosotrosdos-col">
+            <img src="img/lucha.jpg" alt="">
+            <h3> CO-FUNDADOR</h3>
+            <p>Luis Hernando lopez 
+            </p>
+        </div>
+        <div class="nosotrosdos-col">
+            <img src="img/mila.jpg" alt="">
+            <h3> CO-FUNDADOR</h3>
+            <p>Cristhian Camilo Casas
+            </p>
+        </div>
+        <div class="nosotrosdos-col">
+            <img src="img/santi.jpg" alt="">
+            <h3>CEO CO-FUNDADOR</h3>
+            <p >William Santiago Tellez
+            </p>
+        </div>
+    </div>
+
+</section>
+
+<section class="contacto" id="contacto">
+    <h1>
+       ¿Te interesan nuestros servicios? contactanos <br> ¡somos tu mejor opcion!
+        <br>
+    </h1>
+    <button id="open" class="boton-home">
+        Contactanos
+      </button>
+      <div id="modal_container" class="modal-container">
+        <div class="modal">
+          <div class="cerrar">
+            <i id="close" class="bi bi-x-circle-fill"></i>
+        </div>
+          <h3 class="contactanos">CONTACTANOS</h3>
+		<h4>Obtendras una respuesta en menos de 24 horas.</h4> <br> 
+        <center>
+        <form action="" class="form">
+          <label for="">Nombre Completo</label> <br>
+          <input type="text"> <br> <br>
+          <label for="">Correo</label> <br>
+          <input type="text"><br> <br>
+          <label for="">Mensaje</label> <br>
+          <textarea name="" id="" cols="30" rows="10" class="imput-padron"></textarea> <br>
+          <button   id="enviar">Enviar</button>
+        </form>
+      </center>
+
+</section>
+
+<section class="footer">
+    <br>
+    <h4>REDES SOCIALES</h4>
+    <p>Encuentranos en las principales redes sociales  <br>
+        Dando click en los icones de abajo
+    </p>
+    <div class="icons">
+        
+        <i class="bi bi-facebook"></i>
+        <i class="bi bi-whatsapp"></i>
+        <i class="bi bi-twitter"></i>
+
+    </div>
+</section>
+</section>
+</body>
+<script src="efecto.js"></script>
+</html>

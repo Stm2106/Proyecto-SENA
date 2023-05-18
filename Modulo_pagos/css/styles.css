@@ -1,0 +1,141 @@
+body{
+    margin: 0%;
+    padding: 0%;
+    background: url(../img/estructura-abstracta-3d-gris-oscuro_2560x1440_xtrafondos.com.jpg)no-repeat center top;
+}
+
+.loginbox{
+    width: 570px;
+    height: 70vh;
+    background-color: rgb(51, 51, 51, 0.602);
+    color: #fff;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    box-sizing: border-box;
+    padding: 70px 30px;
+    margin-top: 500px;
+    border-radius: 30px;
+    margin-right: 7cm;
+    
+
+   
+}
+.loginbox .avatar{
+    width: 100px;
+    height: 100px;
+    border-radius: 150%;
+    position: absolute;
+    top: -50px;
+    left: calc(50% -50px);
+    
+}
+.loginbox h1{
+    margin: 0%;
+    padding: 0 0 20px;
+    text-align: center;
+    font-size: 32px;
+
+}
+.loginbox label{
+    margin: 0%;
+    padding: 0%;
+    font-weight: bold;
+    display: block;
+}
+
+.loginbox input{
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.loginbox input[type="text"],
+.loginbox input[type="password"]
+{
+    border: none;
+    border-bottom: 1px solid #fff;
+    background:transparent;
+    outline: none;
+    height: 40px;
+    color: rgb(255, 254, 254);
+    font-size: 16px;
+
+}
+.loginbox input[type="submit"]{
+    border:none;
+    outline:none;
+    height: 40px;
+    background-color: black;
+    color: #fff;
+    border-radius: 20px;
+    margin-top: 0.5cm;
+
+}
+.loginbox input[type="text"]{
+    display: flex;
+
+}
+
+
+.loginbox label[for="docum"]{
+    margin-top: 45px;
+}
+.loginbox a{
+    text-decoration: none;
+    font-size: 14px;
+    line-height: 20px;
+    color: #fff;
+    margin-left: 5cm;
+
+}
+.loginbox a:hover{
+    color:rgb(155, 155, 155) 
+}
+#contenedor img {
+    width: 30px;
+    height: 30px;
+    border-radius: 150%;
+    margin-right: 8px;
+
+}
+#img {
+    
+    width: 100px;
+    height: 100px;
+    border-radius: 150%;
+  
+    top: -50px;
+    left: calc(50% -50px);
+    margin-bottom: 20px;
+    margin-top: 20px;
+    margin-left: 80px;
+}
+#botonini{
+ 
+    
+    margin-right: 15px;
+
+
+}
+#regsistrar{
+
+    margin-right: 15px;
+}
+
+span,i{
+    color: #fff;
+}
+#uno{
+    color: rgb(95, 91, 91);
+}
+
+.btn{
+    background: none;
+    transition: 0.60s;
+    text-decoration: none;
+    border: 2px solid;
+}
+
+.btn-efecto:hover, .btn-efecto:focus {
+    
+    box-shadow: inset 32em 0 0 0 #7e9c8a;
+}

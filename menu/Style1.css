@@ -1,0 +1,66 @@
+
+#contenedor img {
+    width: 30px;
+    height: 30px;
+    border-radius: 150%;
+    margin-right: 8px;
+
+}
+#img {
+    
+    width: 100px;
+    height: 100px;
+    border-radius: 150%;
+  
+    top: -50px;
+    left: calc(50% -50px);
+    margin-bottom: 20px;
+    margin-top: 20px;
+    margin-left: 80px;
+}
+#botonini{
+ 
+    
+    margin-right: 15px;
+
+
+}
+#regsistrar{
+
+    margin-right: 15px;
+}
+body {
+    background: url(estructura-abstracta-3d-gris-oscuro_2560x1440_xtrafondos.com.jpg);
+}
+span,i{
+    color: #fff;
+}
+#uno{
+    color: rgb(95, 91, 91);
+    margin-top: 3cm;
+}
+.welcome{
+    margin-top: -24cm;
+    text-align: center;
+    color:#fff;
+    font-size: 60px;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+.Titulo{
+    margin-top: 4cm;
+    margin-left: 2cm;
+    font-size: 125px;
+    color:#fff;
+}
+.Titulo2{
+    margin-top: -0.5cm;
+    margin-left: 3cm;
+    font-size: 50px;
+    color:#fff;
+}
+.Titulo3{
+    margin-top: -0cm;
+    margin-left: 3cm;
+    font-size: 18px;
+    color:#fff;
+}
